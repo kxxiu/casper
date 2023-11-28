@@ -244,6 +244,10 @@ main section > h2{
   width: 1200px;height: 440px;
   margin: 40px auto 0px auto;
 }
+.e_banner h3{
+  width: 1px;height: 1px;
+  text-indent: -9999px;
+}
 .e_banner > ul{
   display: flex;
   position: absolute;
