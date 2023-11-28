@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* base.css */
+
+/* 'Noto Sans KR' */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap');
+
+:root{
+  --t-color01:#333;
+  --t-color02:#fff;
+  --t-color03: #043e96;
+  --bg-color01: #fff;
+  --bg-color02:#212772;
+  --t-size12: 12px;
+  --t-size14: 14px;
+  --t-size16: 16px;
+  --t-size18: 18px;
+}
+
+body{
+  background: var(--bg-color01);
+  color: var(--t-color01);
+  font-family: 'Noto Sans KR', '맑은 고딕', sans-serif;
+  font-size: var(--t-size12);
+  overflow-x: hidden;
+}
+a{
+  color: var(--t-color01);
+  font-size: var(--t-size12);
+  text-decoration: none;
+}

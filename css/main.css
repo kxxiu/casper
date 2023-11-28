@@ -1,0 +1,430 @@
+@charset "utf-8";
+/* main.css */
+
+/* 메인 인트로 서식*/
+#main_intro{
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+}
+#main_intro > h2{
+  width: 1px;height: 1px;
+  text-indent: -9999px;
+}
+#main_intro article{
+  position: absolute;z-index: 100;
+  width: 100%;top: 46%;
+  transform: translateY(-80%);
+  color: var(--t-color02);
+  text-align: center;
+}
+#main_intro article > h3 {
+  font-size: 60px;
+  font-weight: bold;
+}
+#main_intro article > p {
+  font-size: var(--f-size16);
+  line-height: 80px;
+}
+#main_intro article a{
+  margin: 0px 20px;
+  padding: 5px 10px;
+  color: var(--t-color02);
+  font-size: var(--f-size14);
+  text-decoration: underline;
+}
+#main_intro article a:first-of-type{
+  background: #006eff;
+}
+.next_btn{
+  display: block;
+  position: absolute;z-index: 1000;
+  bottom: 40px;left: 50%;
+  width: 30px;height: 30px;
+  transform:rotate(-45deg);
+  border-bottom: 2px solid #fff;
+  border-left: 2px solid #fff;
+  text-indent:-9999px;
+}
+
+/* 공통 서식 */
+#top3, #test, #event, #buy, #cs{
+  margin: 150px auto;
+  width: 1200px;
+}
+main section > h2{
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* 인기 상품 서식 */
+.p01{
+  font-size: var(--t-size14);
+  line-height: 50px;
+  text-align: center;
+}
+#top3 .swiper-slide{text-align:center;}
+.top3{
+  margin-top:50px;
+  padding:20px 0px 10px 0px;
+  position:relative;
+  overflow: hidden;
+}
+
+/* 슬라이드 */
+.top3 .rank{
+  padding: 6px 30px;
+  border: 1px solid #327186;
+  border-radius: 20px;
+  color: #327186;
+  font-size: var(--t-size14);
+}
+.top3_title{
+  padding-top: 30px;
+  color: var(--t-color03);
+  font-size: 26px;
+  font-weight: 500;
+}
+.top3 img{
+  width: 400px;
+  padding: 80px 0px;
+  transform:scale(0.7);
+  transition: 0.8s;
+  transition-timing-function: cubic-bezier(0.1, 1.0);
+}
+.top3 .swiper-slide-active img{transform:scale(1.2);}
+
+/* 상세내용 */
+.top3 .detail{
+  display:flex;
+  justify-content:center;
+  padding-bottom:60px;
+}
+.top3 .detail li{
+  padding:0px 20px;
+  width:190px;
+  border-right:1px solid #ccc;
+  font-size:16px;
+  line-height: 20px;
+  text-align:left;
+}
+.outer_color, .inner_color{
+  display: inline-block;
+  float: left;
+  width: 56px;height: 40px;
+  margin-right: 30px;
+  text-indent: -9999px;
+}
+.kaki{background: #494b3e;}
+.black{background: #000;}
+.white{background: #fff;border: 1px solid #ccc;}
+.orange{background: rgb(190, 86, 0);}
+
+.detail li:last-child{
+  padding-top: 6px;
+  border-right: none;
+  color: var(--t-color03);
+}
+.price{
+  font-size: 32px;
+  font-weight: bold;
+}
+
+/* 견적 버튼 */
+.btn{
+  width: 150px;
+  padding: 8px 0px;
+  border: 1px solid #333;
+  background: none;
+  font-size: var(--t-size14);
+  font-weight: bold;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.btn:hover{color: var(--t-color02);}
+.b_btn:hover{background: rgb(52, 52, 201);}
+
+/* 컨트롤 버튼 */
+.swiper-pagination2{
+  text-align: center;
+  padding-top: 30px;
+}
+
+/* 버튼 공통 서식 */
+.sign_btn{
+  padding: 10px 60px;
+  background-color: var(--bg-color02);
+  color: #fff;
+  line-height: 30px;
+}
+.link_btn{
+  display: block;
+  color: #0b0bea;
+}
+
+
+/* 소개 서식 */
+#intro{
+  overflow: hidden;
+  position: relative;
+  height: 860px;
+  text-align: center;
+}
+#intro h2, .intro_title_left, .intro_title_right, .more_btn{
+  position: absolute;z-index: 2;
+}
+#intro h2{
+  width: 100%;
+  text-align: center;
+  margin: 80px 0px;
+}
+.intro_title_left, .intro_title_right{
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: bold;
+}
+.intro_title_left{
+  left: 300px;top: 150px;
+  text-align: left;
+}
+.intro_title_right{
+  right:200px;bottom:150px;;
+  text-align:right;
+}
+#intro video{
+  position: absolute;z-index: 1;
+  left: 0px;top: 0px;
+}
+.more_btn{
+  bottom:20px;
+  transform:translateX(-50%);
+}
+.more_btn{width: 100px;}
+.more_btn:hover{background: #616161;}
+
+/* 시승신청 서식 */
+#test{text-align: center;}
+#test article{
+  display: inline-block;
+  margin-top: 50px;
+  padding: 15px;
+  width: 430px;height: 260px;
+  border: 1px solid #ccc;
+  vertical-align: middle;
+}
+.test_drive_l{margin-right: 30px;}
+.t_drive_r{transform: translateY(-11px);}
+#test > article > h3{
+  padding-top: 20px;
+  line-height: 40px;
+  font-size: 24px;
+  font-weight: bold;
+}
+#test > article > p{
+  padding: 20px 0px;
+  line-height: 20px;
+  font-size: var(--f-size);
+  font-weight: 500;
+}
+#test .link_btn{
+  position: relative;top: 16px;
+}
+.t_drive_p2{transform: translateY(50px);}
+.test_drive_r .t_drive_p2{transform: translateY(62px);}
+
+/* 이벤트 배너 */
+#event{
+  width: 100%;height: 500px;
+  padding: 60px 0;
+  background: #ececec;
+}
+.e_banner{
+  overflow: hidden;
+  position: relative;
+  width: 1200px;height: 440px;
+  margin: 40px auto 0px auto;
+}
+.e_banner > ul{
+  display: flex;
+  position: absolute;
+  width: 4800px;
+}
+.e_banner .ctrl_btn{
+  display: flex;
+  justify-content: space-around;
+  position: absolute;bottom: 90px;left: 50%;
+  transform: translateX(-50%);
+  width: 280px;
+  cursor: pointer;
+}
+.e_banner .ctrl_btn span{
+  display: inline-block;
+  width: 60px;height: 8px;
+  background: #ccc;
+}
+.act01{background: #333 !important;}
+
+/* 구매안내 */
+#buy{text-align: center;}
+#buy h3{
+  padding: 30px 0 70px 0;
+  font-size: 24px;
+  font-weight: 500;
+}
+.t_color{color: var(--t-color03);}
+#buy ul{
+  margin: 0 auto;
+  width: 1000px;
+}
+.clearfix::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+#buy ul li{
+  float: left;
+  width: 33.333%;
+  margin-bottom: 60px;
+}
+#buy ul li h4{
+  font-size: var(--t-size16);
+  font-weight: bold;
+}
+#buy ul li img{
+  width: 70px;
+  padding: 15px 0;
+}
+#buy ul li .p03{line-height: 20px;}
+#buy iframe{width: 996px;height: 560px;}
+
+/* 고객지원 */
+#cs{
+  width: 100%;
+  margin:150px auto 0 auto;
+  padding:60px 0;
+  background: #ececec;
+}
+#cs > h2{margin-bottom: 40px;}
+#cs article{
+  width: 1200px;
+  margin: 0 auto 30px auto;
+  background: var(--bg-color01);
+}
+#cs article h3{
+  padding: 40px 0 50px 0;
+  font-size: var(--t-size18);
+  font-weight: 500;
+  text-align: center;
+}
+#cs article div{
+  display: flex;
+  justify-content: center;
+  float: left;
+  width: 50%;
+  padding: 0px 0px 60px 0;
+}
+#cs article div > p{
+  width: 200px;
+  text-align: center;
+}
+#cs article div > p strong{
+  display: block;
+  font-size: var(--t-size16);
+  font-weight: 600;
+  line-height: 18px;
+}
+#cs article div > p a{margin: 12px 0;}
+#cs article div > p a::after{
+  content: ' >';
+  color: #0b0bea;
+}
+.car, .member{
+  display: inline-block;
+  width: 60px;height: 46px;
+  background-image: url(../images/ico-main-guide.72b7c3f.png);
+  background-size: 300px;
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+}
+.car{
+  margin-top: 20px;
+  background-position: -175px 3px;
+}
+.member{
+  margin-top: 20px;
+  width: 64px;
+  background-position: -236px 7px;
+}
+#cs dl{
+  padding-left: 20px;
+  line-height: 22px;
+}
+#cs dl dt{font-weight: bold;}
+#cs dl dt:last-of-type{margin-top: 5px;}
+#cs dl dd{color: #6d6d6d;}
+#cs .qna{
+  display: flex;
+  justify-content: space-between;
+  margin: 30px auto;
+  width: 1200px;
+  font-size: var(--t-size14);
+}
+#cs .qna li{
+  position: relative;
+  width: 220px;height: 230px;
+  padding: 30px;
+  background: var(--bg-color01);
+}
+#cs .qna li h4{
+  font-size: var(--t-size18);
+  font-weight: bold;
+}
+#cs .qna li p{
+  margin: 20px 0 10px 0;
+  line-height: 22px;
+  font-size: var(--f-size14);
+}
+#cs .qna li span{
+  color: #9c9c9c;
+  font-size: var(--f-size14);
+  font-weight: 500;
+}
+#cs .qna_btn{
+  display: block;
+  position: absolute;
+  bottom: 30px;left: calc(50% - 100px);
+  width: 200px;line-height: 32px;
+  background-color: var(--bg-color02);
+  color: var(--t-color02);
+  text-align: center;
+}
+#cs .qna-link{
+  display: inline-block;
+  color: #1313bf;
+  font-size: var(--t-size14);
+  font-weight: 500;
+  line-height: 20px;
+}
+.qna-btn{
+  display: block;
+  position: absolute;bottom: 20px;left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  line-height: 40px;
+  background: var(--bg-color02);
+  color: var(--t-color02);
+  font-size: var(--t-size14);
+  font-weight: normal;
+  text-align: center;
+}
+.app-cont{text-align: center;}
+.app-cont a{margin-right: 10px;}
+.app-cont img{
+  display: block;
+  margin: 22px auto;
+}
+#random{
+  width: 1200px;
+  margin: 20px auto;
+}
